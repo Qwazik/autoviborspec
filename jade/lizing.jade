@@ -1,0 +1,31 @@
+extends template
+include includes/mixins.jade
+block main
+	.inner-page
+		.container
+			.header-block
+				h2 Лизинг 
+				.breadcumbs
+					ul
+						li: a(href="") Главная
+						li.active: a(href="") Лизинг
+		.inner-page__content
+			.container.lizing
+				p Уважаемые клиенты и партнеры, спецтехнику, представленную на нашем сайте, вы<br> можете приобрести в лизинг.
+				br
+				br
+				p: b Мы сотрудничаем со следующими лизинговыми компаниями:
+				ul.lizing__list
+					+lizingItem('ОАО ВТБ Лизинг','т. +7 (910) 743-17-30','www.vtb-leasing.ru')
+					+lizingItem('ОАО ВТБ Лизинг','т. +7 (910) 743-17-30','www.vtb-leasing.ru')
+					+lizingItem('ООО «Каркаде»','т./ф. +7(499) 929-07-08','www.carcade.com')
+					+lizingItem('ОАО «ВЭБ-лизинг»','Тел.: +7 (4812) 24-40-75, 24-40-74','www.veb-leasing.ru')
+					+lizingItem('« Балтийский Лизинг » ','+7(812) 325-90-80','www.baltlease.ru')
+					+lizingItem('«Европлан»','+7(495)789-80-80','www.leasing.ru')
+					+lizingItem('«ЭкономЛизинг»','т. +7(8452)39-44-39','ф. +7(8452)20-84-74', 'www.economleasing.ru')
+					+lizingItem('«БИГ-лизинг»','т. +7(812)326-14-36','+7(812)326-14-05','ф. +7(812)326-14-50')
+					+lizingItem('ООО «Неолизинг»','тел: +7 926 295 1318','+7 916 002 1281','+7 495 938 9978','www.neoleasing.com')
+					+lizingItem('ООО «Солид Лизинг»','т./ф. +7(495) 775-77-10, 797-31-68','моб. +7(903)106-18-02','моб. +7(916)204-97-45','www.solid-leasing.ru')
+
+
+			

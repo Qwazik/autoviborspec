@@ -1,0 +1,45 @@
+extends template
+include includes/mixins.jade
+block main
+	.inner-page
+		.container
+			.header-block
+				h2 Услуги
+				.breadcumbs
+					ul
+						li: a(href="") Главная
+						li.active: a(href="") Услуг
+		.inner-page__content.nopadding
+			.container
+				.inner-services
+					.inner-services__row.clearfix.border-bottom
+						.inner-services__column--left.inner-services__column
+							a(href="#").inner-services__item
+								i.icon.icon-service-item1
+								span Установка компрессора на шасси тягача с приводом от КОМ (коробки отбора мощности)
+							a(href="#").inner-services__item
+								i.icon.icon-service-item2
+								span Установка компрессора на шасси тягача с приводом электродвигателя (380 вольт)
+							a(href="#").inner-services__item
+								i.icon.icon-service-item3
+								span Установка компрессора на шасси тягача с приводом электродвигателя (380 вольт)
+							a(href="#").inner-services__item
+								i.icon.icon-service-item4
+								span Установка компрессора  на полуприцеп с приводом от дизельного двигателя
+						.inner-services__column--right.inner-services__column
+							.aswell
+								span А также:
+								ul.aswell__list.red-list
+									li Капитальный ремонт винтовых компрессоров
+									li Техническое обслуживание винтовых компрессоров
+								.aswell__bottom
+									p Подробности по телефону:
+									p (4832) 92 17 45,  (4832) 92 22 54
+					.inner-services__row.clearfix.border
+						.inner-services__bottom
+							p Мы работаем по системе Traid In (отдаем новый компрессор в обмен на страный с разницей в цене)
+							ul.red-list--inside
+								li: a(href="#") Вакуумные насосы Gardner Denver
+								li: a(href="#") Винтовые компрессоры Gardner Denver
+								li: a(href="#") Воздушные компрессоры низкого давления
+								li: a(href="#") Комбикормовозы

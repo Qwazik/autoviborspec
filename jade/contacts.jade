@@ -1,0 +1,25 @@
+extends template
+include includes/mixins.jade
+block main
+	.inner-page
+		.container
+			.header-block
+				h2 Контакты 
+				.breadcumbs
+					ul
+						li: a(href="") Главная
+						li.active: a(href="") Контакты
+		.inner-page__content
+			.container.contacts
+				.contacts--left
+					p <b>Адрес:</b> 241520, Брянская обл., Брянский р-н, с. Супонево, ул. Комсомольская, 63
+					p <b>Телефоны:</b>  +7-903-818-05-70 , (4832) 92-17-45, (4832) 92-22-54, +7-961-001-51-51
+				.contacts--right
+					p 
+						b E-mail: 
+						a(href="#") autovyborsale@bk.ru
+					p 
+						b Сайт: 
+						a(href="#") www.spectehnica.net
+			.contacts__map
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=zBeEXS5OGaweOtJUlMps9NeTsxRxQVWr&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>

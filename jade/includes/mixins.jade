@@ -1,0 +1,53 @@
+//- спецпредложение итем
+mixin specOfferItem(img, text)
+		.specoffer-item
+			.specoffer-item__image
+				img(src=img, alt="")
+			.specoffer-item__text
+				= text
+//- продукт
+mixin productItem(img, name, type, elclass)
+	.col-xs-3
+		.product-item(class=elcla).clearfix
+			.product-item__head
+				img(src=img, alt="")
+			.product-item__content
+				.product-item__body
+					strong.product-item__name
+						=name
+					span.product-item__type
+						=type
+				.product-item__foot
+					.buy-btn 
+						a(href="#") Заказать 
+					.desc-btn 
+						a(href="#") Описание
+//- Новость
+mixin newsItem(subject, text, img, elclass, img2)
+	.news-item(class=elclass)
+		.news-item__content
+			.date 30.06.2016
+			a(href="#").subject
+				=subject
+			.content
+				=text
+		.news-item__image
+			if img
+				img(src=img, alt="")
+			if img2
+				img(src=img2, alt="")
+//- lizing item
+mixin lizingItem(name, tel, tel2, tel3, site)
+	li.lizing__item
+		span.lizing__name
+			=name
+		span.lizing__tel
+			=tel
+		if tel2
+			span.lizing__tel
+				=tel2
+		if tel3
+			span.lizing__tel
+				=tel3
+		a.lizing__site(href="#")
+			=site 
